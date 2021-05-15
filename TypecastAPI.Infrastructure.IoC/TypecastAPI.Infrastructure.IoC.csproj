@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TypecastAPI.Domain\TypecastAPI.Domain.csproj" />
+    <ProjectReference Include="..\TypecastAPI.Infrastructure.Data\TypecastAPI.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\TypecastAPI.Application\TypecastAPI.Application.csproj" />
+  </ItemGroup>
+</Project>

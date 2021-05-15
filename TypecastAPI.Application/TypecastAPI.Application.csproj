@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="ViewModels\ArticleViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TypecastAPI.Domain\TypecastAPI.Domain.csproj" />
+    <ProjectReference Include="..\TypecastAPI.Infrastructure.Data\TypecastAPI.Infrastructure.Data.csproj" />
+  </ItemGroup>
+</Project>
